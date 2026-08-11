@@ -940,7 +940,9 @@ function closeLightbox(){document.getElementById('lightbox').style.display='none
       </div>
     </div>
     <div class="contact-form-card fade-in" style="transition-delay:0.2s">
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6b98afb6-1596-4c7a-a626-380f0d282761" />
+        <input type="hidden" name="subject" value="New Portfolio Inquiry from Your Website" />
         <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Jane Smith" required />
